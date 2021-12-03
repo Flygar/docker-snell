@@ -20,7 +20,7 @@ docker run \
 --name snell \
 --restart=always \
 -P \
-snell:latest 
+flygar/snell:latest 
 
 # Docker Hub
 docker run \
@@ -29,7 +29,7 @@ docker run \
 --restart=always \
 -p 28888:32910/tcp \
 -p 28888:32910/udp \
-snell:latest 
+flygar/snell:latest 
 
 # replace「ENTRYPOINT」and「CMD」
 # Docker Hub
@@ -37,7 +37,7 @@ docker run \
 -d \
 --name test \
 --entrypoint /bin/sh \
-snell:latest \
+flygar/snell:latest \
 -c "sleep infinity"
 ```
 

@@ -1,6 +1,6 @@
 name: Publish Docker image
 # TODO 当snell官方仓库更新版本时，自动触发构建
-# TODO 利用docker tower？自动更新vps上的container
+# TODO 利用containrrr/watchtower？自动更新vps上的container
 on:
   # schedule:
   #   - cron: '0 10 * * *' # everyday at 10am
