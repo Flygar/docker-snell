@@ -1,5 +1,6 @@
 name: Publish Docker image
-
+# TODO 当snell官方仓库更新版本时，自动触发构建
+# TODO 利用docker tower？自动更新vps上的container
 on:
   # schedule:
   #   - cron: '0 10 * * *' # everyday at 10am
@@ -82,7 +83,8 @@ jobs:
           # 生成多平台镜像
           platforms: |
             linux/amd64
-            linux/arm64
+          # TODO 需要修改新增下载arm64架构下的snell的dockerfile。并在当前action新增变量，指定具体的dockerfile。后面树莓派做透明网关可能会用到指定架构的snell。
+          # linux/arm64 
           tags: |
             ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
