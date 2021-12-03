@@ -8,6 +8,7 @@ docker pull
 docker pull ghcr.io/flygar/docker-snell:latest 
 
 # Docker Hub
+# https://hub.docker.com/r/flygar/snell/tags
 docker pull flygar/snell:latest 
 ```
 
