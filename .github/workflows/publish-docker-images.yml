@@ -83,7 +83,7 @@ jobs:
           # 生成多平台镜像
           platforms: |
             linux/amd64
-          # TODO 需要修改新增下载arm64架构下的snell的dockerfile。并在当前action新增变量，指定具体的dockerfile。后面树莓派做透明网关可能会用到指定架构的snell。
+          # TODO 需要修改新增下载arm64架构下的snell的dockerfile。并在当前action新增变量，指定具体的dockerfile。后面树莓派做透明网关可能会用到树莓派架构的snell。
           # linux/arm64 
           tags: |
             ${{ steps.meta.outputs.tags }}
