@@ -16,7 +16,7 @@ on:
 
 # 定义全局环境变量
 env:
-  SNELL_VERSION: "2.0.6"
+  SNELL_VERSION: "3.0.1"
   GLIBC_VERSION: "2.34-r0"
   SERVER_PORT: "32910"
   IMAGE_NAME: "snell"
