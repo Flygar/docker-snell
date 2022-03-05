@@ -9,7 +9,7 @@ ENV SNELL_VERSION ${SNELL_VERSION:-2.0.3}
 ENV SERVER_HOST 0.0.0.0
 ENV SERVER_PORT ${SERVER_PORT:-32900} 
 ENV IPV6 false
-ENV OBFS tls
+ENV OBFS http
 
 # config
 RUN echo "[snell-server]" >> snell-server.conf && \
